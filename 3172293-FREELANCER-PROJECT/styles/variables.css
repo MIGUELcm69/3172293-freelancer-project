@@ -68,6 +68,7 @@
   --fs-xs:    1.6rem; /* Extra pequeño */
   --fs-xxs:   1.4rem; /* Extra extra pequeño */
   --fs-xxxs:  1.2rem; /* Mínimo */
+  --fs-xxxxs:  0.8rem; /* Mínimo */
 
 }
 /* globals */
@@ -86,70 +87,4 @@ body{
 
 /* Firt mobile */
 
-/* ============= */
-   /*Hearder*/
-/* ============= */
-.header{
-    position: static;
-    top: 0px;
-    width: 100%;
-    z-index: 100%;
-}
-/* ============= */
-   /*navbar*/
-/* ============= */
-.navbar__title {
-    margin: 0;
-    padding:12;
-    font-size: var(--fs-md);
-    text-align: center;
-    
-}
-.navbar__subtitle{
-    font-size: var(--fs-xs);
-    color: var(--gray-800);
-}
 
-.navbar {
-    background-color: var(--primary-800);
-   
-    
-}
-
-.navbar__list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    list-style: none;
-    
-}
-
-.navbar__link{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    text-decoration: none;
-    color:var(--white);
-    padding: 4px 0;
-}
-@media(width > 768px){
-
-  .navbar__list{
-    flex-direction:row;
-    gap:40px;
-    justify-content: space-evenly;
-  }
-
-  .navbar__link:hover{
-    color: var(--secondary-300);
-  }
-}
-
-.navbar__link.active {
-    background-color: var(--white);
-    color: var(--primary-950);
-    font-weight: bold;
-    padding: 8px 24px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
