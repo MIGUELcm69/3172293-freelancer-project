@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science</title>
+
+    <link rel="stylesheet" href="./css/variables.css">
+    
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/hero.css">
+    <link rel="stylesheet" href="./css/components/promo.css">
+    <link rel="stylesheet" href="./css/components/cards.css">
+    <link rel="stylesheet" href="./css/components/companies.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+
+    <script type="module">
+        import { loadCards } from "./js/render.js";
+        loadCards(".cards__grid");
+    </script>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__item">HOME</li>
+                <li class="header__item">WATCH ON DEMAND</li>
+                <li class="header__item">STAY IN THE LOOP</li>
+                <li class="header__item">PRESS ROOM</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!--HERO PRINCIPAL-->
+        <section class="hero">
+            <button class="hero__scroll-down" aria-label="Scroll down"></button>
+            
+            <div class="hero__content">
+                <div class="hero__left">
+                    <h1 class="hero__title">
+                        <span class="hero__title--cyan">DATA</span> 
+                        <span class="hero__title--small">PIONEERS</span><br>
+                        SCIENCE
+                    </h1>
+                    <p class="hero__subtitle">CONQUERING THE NEXT FRONTIER</p>
+                </div>
+                
+                <div class="hero__right">
+                    <p class="hero__description">
+                        GLOBAL DATA SCIENTISTS CONTEXTUALIZE THEIR ROLE AND WHY THEY LOVE IT WHILE EXPLORING ETHICAL CONCERNS AND THE CHALLENGES TO COME.
+                    </p>
+                    <a  class="btn btn--cyan">
+                        <span class="btn__icon btn__icon--play"></span> WATCH TRAILER NOW
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--  CONTENIDO PROMOCIONAL -->
+        <section class="promo">
+            <!-- Título gigante superpuesto -->
+            <h2 class="promo__giant-title">WATCH NOW WATCH</h2>
+            
+            <div class="promo__layout">
+                <div class="promo__image-container">
+                    <!-- Imagen del edificio (cargada por CSS o aquí) -->
+                    <img src="./assets/promo-image.jpg" alt="Building dome" class="promo__image">
+                </div>
+                
+                <div class="promo__text-container">
+                    <p class="promo__description">
+                        IT'S HARD TO TELL THE DIFFERENCE BETWEEN DATA SCIENCE HYPE AND REALITY. DATA SCIENCE PIONEERS IS NOW AVAILABLE. WHAT ARE YOU WAITING FOR?
+                    </p>
+                    <a href="#" class="btn btn--cyan">WATCH NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <!--CARDS -->
+        <section class="cards">
+            <div class="cards__grid"></div>
+        </section>
+
+        <!--SECCIONES INFORMATIVAS-->
+        <section class="companies">
+            <button class="companies__scroll-up" aria-label="Scroll up"></button>
+
+            <div class="companies__content">
+                <h2 class="companies__title">
+                    <span class="companies__title--outline">COMPANIES</span><br>
+                    <span class="companies__title--cyan">INVOLVED</span>
+                </h2>
+            </div>
+        </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">   
+        <div class="footer__legal">
+            <p class="footer__copyright">
+                © DATA IKUIKU 2013-2024. ALL RIGHTS RESERVED. <a href="#" class="footer__link">PRIVACY POLICY</a>
+            </p>
+        </div>
+</body>
+</html>
